@@ -1,47 +1,47 @@
 # DASH Project
 
-Étudiant : DOUBABI Mustapha
+Student : DOUBABI Mustapha
 
-Ce projet est un shell simplifié, écrit en langage C. Il supporte les fonctions de base d'un shell standard telles que le changement de répertoire, la gestion des chemins, l'exécution de commandes basiques et plus encore.
+This project is a simplified shell written in the C programming language. It supports basic functions of a standard shell, including changing directories, path management, executing basic commands, and more.
 
 ## Compilation
-Pour compiler le projet, vous aurez besoin d'un compilateur C comme GCC. Vous devez vous rendre dans le dossier du projet et taper la commande suivante :
+To compile the project, you will need a C compiler such as GCC. You should navigate to the project directory and run the following command:
 
 ```bash
 gcc -o dashShell main.c fonctionsAnnexes.c
 ```
-Cela générera un fichier exécutable appelé dashShell.
+This will generate an executable file called dashShell.
 
 ## Exécution
-Après la compilation, vous pouvez exécuter le programme de la manière suivante :
+After compilation, you can run the program as follows:
 
 ```bash
 ./dashShell
 ```
-Vous serez accueilli par un message de bienvenue et vous pourrez ensuite commencer à entrer des commandes.
+You will be greeted with a welcome message, and you can then start entering commands.
 
 ## Tests unitaires
-Nous avons également fourni des tests unitaires pour ce projet pour nous assurer qu'il fonctionne correctement.
+We have also provided unit tests for this project to ensure that it functions correctly.
 
-Pour compiler et exécuter les tests, compilez le fichier de test avec la commande suivante :
+To compile and run the tests, compile the test file with the following command:
 ```bash
 gcc -o testUnitaires testsUnitaires.c fonctionsAnnexes.c
 ```
-Cela générera un fichier exécutable appelé testUnitaires. À présent, exécutez les tests avec la commande suivante :
+This will generate an executable file called testUnitaires. Now, execute the tests with the following command:
 ```bash
 ./testUnitaires
 ```
-Cela lancera tous les tests unitaires. Vous verrez les résultats directement dans votre terminal.
+This will run all the unit tests, and you will see the results directly in your terminal.
 
 ## Notes
 
-1) Il est important de noter que ce programme a été testé sous un environnement Unix/Linux. La compilation et l'exécution peuvent ne pas fonctionner comme prévu si vous êtes sous un autre système d'exploitation.
+1) It's important to note that this program has been tested in a Unix/Linux environment. Compilation and execution may not work as expected if you are using a different operating system.
 
 
-2) Le shell prend en compte les espaces pour les commandes "cd". Pour utiliser la commande cd vers un dossier contenant un espace, procédez comme suit :
+2) The shell considers spaces for "cd" commands. To use the "cd" command to navigate to a directory containing spaces, do as follows:
 
 ```bash
-dash> cd "Dossier Test"
+dash> cd "Test Folder"
 ```
 
-3) Pour utiliser les tests unitaires, assurez-vous de disposer d'un dossier rmTest dans le répertoire où vous avez exécuté les tests pour vérifier que la commande cd fonctionne bien.
+3) To use the unit tests, make sure you have an rmTest folder in the directory where you executed the tests to ensure that the "cd" command works correctly.
